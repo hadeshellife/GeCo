@@ -25,4 +25,10 @@ public class LoginGeneratorTest {
         assertEquals("PDUR",login);
     }
 
+    @Test
+    public void generateLoginForJRAL2() throws Exception{
+        String login = aLoginGenerator.generateLoginForNomAndPrenom("Ralling", "John");
+        assertEquals("JRAL2", login);
+    }
+
 }
