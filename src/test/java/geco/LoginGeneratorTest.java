@@ -36,4 +36,10 @@ public class LoginGeneratorTest {
         String login = aLoginGenerator.generateLoginForNomAndPrenom("Durand", "Paul");
         assertEquals("PDUR", login);
     }
+
+    @Test
+    public void loginJROLNumber(){
+        String login = aLoginGenerator.generateLoginForNomAndPrenom("Rolling", "Jean");
+        assertEquals("JROL1", login);
+    }
 }
